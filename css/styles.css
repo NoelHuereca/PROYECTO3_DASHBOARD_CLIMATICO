@@ -1,0 +1,5 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+#title{
+    font-weight: 900;
+}
+/* https://tile.openweathermap.org/map/temp_new/12/20.7167/-103.4.png?appid=60b8cc4849c0ce289f96fe055bdd008b */

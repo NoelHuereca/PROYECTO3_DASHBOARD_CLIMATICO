@@ -1,0 +1,17 @@
+{
+  "name": "proyecto3-dashboard-climatico",
+  "version": "1.0.0",
+  "description": "proyecto3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Noel Huereca",
+  "license": "ISC",
+  "dependencies": {
+    "@kurkle/color": "^0.3.2",
+    "bootstrap": "^5.3.0",
+    "chart.js": "^4.3.0"
+  }
+}

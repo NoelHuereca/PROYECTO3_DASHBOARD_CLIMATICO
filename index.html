@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard Climatico</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center"
+          >
+            <h1 id="title">OpenWeaterMap</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputCiudad" class="col-form-label">Ciudad</label>
+              </div>
+              <div class="col-auto">
+                <input
+                  type="text"
+                  id="inputCiudad"
+                  class="form-control"
+                  aria-labelledby="passwordHelpInline"
+                  placeholder="ingresa una ciudad"
+                />
+              </div>
+              <div class="col-auto">
+                <button id="btnEnviar" type="button" class="btn btn-primary">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Region</th>
+                  <th scope="col">Temperatura</th>
+                  <th scope="col"></th>
+                  <th scope="col">Condicion Climatica</th>
+                </tr>
+              </thead>
+              <tbody id="content"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="col-lg-3">
+            <div id="mapMet"></div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
